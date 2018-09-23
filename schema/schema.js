@@ -14,20 +14,6 @@ const {
 const Player = require('../models/player.js');
 const Team = require('../models/team.js');
 
-const books = [
-  { name: 'The concepts of Physics', genre: 'Science', id: '1', auhtorId: '1' },
-  { name: 'Tinkle', genre: 'Kids', id: '2', auhtorId: '2' },
-  { name: 'The Famous Five', genre: 'Fiction', id: '3', auhtorId: '3' },
-  { name: 'Another physics book', genre: 'Science', id: '4', auhtorId: '1' },
-  { name: 'The Hardy Boys', genre: 'Fiction', id: '5', auhtorId: '3' }
-];
-
-const authors = [
-  { name: 'HC Verma', age: 26, id: '1' },
-  { name: 'Tinkle Author', age: 45, id: '2' },
-  { name: 'Enid Blyton', age: 54, id: '3' }
-];
-
 const PlayerType = new GraphQLObjectType({
   name: 'Player',
   fields: () => ({
